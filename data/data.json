@@ -1,3 +1,17 @@
 {
-  "apps": []
+  "apps": [
+    {
+      "id": 1,
+      "name": "万能wifi大师",
+      "icon": "",
+      "description": "",
+      "ratings": [
+        {
+          "stars": 1,
+          "comment": "废物",
+          "createdAt": "2026-07-10T19:19:10.561Z"
+        }
+      ]
+    }
+  ]
 }

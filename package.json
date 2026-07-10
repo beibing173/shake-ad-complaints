@@ -4,9 +4,10 @@
   "description": "摇一摇广告吐槽榜 - 匿名吐槽那些烦人的摇一摇广告",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "dev": "npx wrangler pages dev public --kv DATA",
+    "deploy": "npx wrangler pages deploy public --kv DATA"
   },
-  "dependencies": {
-    "express": "^4.22.2"
+  "devDependencies": {
+    "wrangler": "^4.0.0"
   }
 }

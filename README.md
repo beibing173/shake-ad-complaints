@@ -23,14 +23,6 @@
 - **存储** — Cloudflare KV（Key-Value 存储）
 - **前端** — 原生 HTML + CSS + JavaScript
 
-## 本地开发
-
-```bash
-cd shake-ad-complaints
-npm install
-npx wrangler pages dev public --kv DATA
-# → http://localhost:8788
-```
 
 ## 部署到 Cloudflare Pages
 

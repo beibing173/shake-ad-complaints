@@ -32,8 +32,11 @@ function updateStats(apps) {
 
 function renderApps(apps) {
   var html = '';
-  apps.forEach(function(app, i) {
-    var badge = i === 0 ? '<div class="rank-badge gold">🏆</div>'
+  if (apps.length === 0) {
+    html = '<div class="empty-state"><div class="emoji">📱</div><p>还没有 App，点击上方「添加 App」开始吐槽！</p></div>';
+  } else {
+    apps.forEach(function(app, i) {
+      var badge = i === 0 ? '<div class="rank-badge gold">🏆</div>'
       : i === 1 ? '<div class="rank-badge silver">🥈</div>'
       : i === 2 ? '<div class="rank-badge bronze">🥉</div>'
       : '<div class="rank-badge">' + (i + 1) + '</div>';
@@ -47,7 +50,8 @@ function renderApps(apps) {
       + ' <span class="count-num">(' + app.ratingCount + ' 条吐槽)</span></div>'
       + renderDistBar(app.distribution, app.ratingCount)
       + '</div></div>';
-  });
+    });
+  }
   $('#appList').innerHTML = html;
   $$('.app-card').forEach(function(el){
     el.addEventListener('click', function(){ openDetail(parseInt(el.dataset.id)); });

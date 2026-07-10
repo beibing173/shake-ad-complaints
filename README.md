@@ -34,4 +34,4 @@ node server.js
 
 ## Git 版本控制
 
-所有数据存储在 `data/data.json` 中，随代码一起提交，方便回溯每次吐槽的变迁。
+所有数据存储在 `data/data.json` 中，随代码一起提交，方便清理。

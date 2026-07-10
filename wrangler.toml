@@ -1,8 +1,11 @@
+# wrangler.toml (for local dev only)
+# KV binding 请在 Cloudflare Pages 面板中配置
+
 name = "shake-ad-complaints"
 compatibility_date = "2025-04-01"
 
-pages_build_output_dir = "public"
-
+# KV namespace for data storage
 [[kv_namespaces]]
 binding = "DATA"
-id = ""
+# 本地开发时需设置 id，或使用 --kv DATA 参数
+# npx wrangler pages dev public --kv DATA

@@ -19,19 +19,32 @@
 
 ## 技术栈
 
-- **后端** — Node.js + Express
-- **存储** — JSON 文件（纯文本，方便版本管理）
+- **后端** — Cloudflare Pages Functions
+- **存储** — Cloudflare KV（Key-Value 存储）
 - **前端** — 原生 HTML + CSS + JavaScript
 
-## 本地运行
+## 本地开发
 
 ```bash
 cd shake-ad-complaints
 npm install
-node server.js
-# → http://localhost:3000
+npx wrangler pages dev public --kv DATA
+# → http://localhost:8788
 ```
 
-## Git 版本控制
+## 部署到 Cloudflare Pages
 
-所有数据存储在 `data/data.json` 中，随代码一起提交，方便回溯每次吐槽的变迁。
+1. 打开 https://dash.cloudflare.com/ → **Workers & Pages**
+2. 创建 Pages 项目，连接 GitHub 仓库，分支选 `cf-pages`
+3. 构建设置：输出目录 `public`，无需 Build Command
+4. 在 **设置 → 绑定** 中添加 KV 命名空间：
+   - 变量名：`DATA`
+   - 预先创建一个 KV 命名空间（名称随意）
+5. 保存并部署
+
+## Git 分支说明
+
+- `main` — 原始 Express 版本（适合本地运行）
+- `cf-pages` — Cloudflare Pages 版本（线上部署）
+
+> 所有数据存储在 Cloudflare KV 中，**不是**本地 JSON 文件。

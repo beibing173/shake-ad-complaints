@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📱 摇一摇广告吐槽榜</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1><span class="shake-icon">📱</span> 摇一摇广告吐槽榜</h1>
+    <p class="subtitle">匿名吐槽那些烦人的「摇一摇」广告 · 拒绝摇一摇，还我清净手机</p>
+    <div class="stats-bar" id="statsBar">加载中...</div>
+  </header>
+  <main id="mainContent">
+    <h2 style="margin-bottom:16px;">🏆 App 吐槽榜单</h2>
+    <div id="appList" class="app-list"></div>
+  </main>
+  <div id="modal" class="modal hidden">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+  <p>🕶️ 完全匿名 · 数据仅本地存储 · 为更干净的 App 体验</p>
+</footer>
+<script src="/app.js"></script>
+</body>
+</html>

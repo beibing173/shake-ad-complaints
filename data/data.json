@@ -1,0 +1,385 @@
+{
+  "apps": [
+    {
+      "id": 1,
+      "name": "淘宝",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7d/c7/6f/7dc76f4c-56ad-90e3-bbd8-17455b4f3585/logo_taobao.png/120x120bb.png",
+      "description": "打开就摇，摇完就跳转，购物之前先做广播体操。",
+      "ratings": [
+        {
+          "stars": 3,
+          "comment": "求求你做个人吧，取消摇一摇广告",
+          "createdAt": "2026-06-14T19:05:30.085Z"
+        },
+        {
+          "stars": 5,
+          "comment": "上个厕所抖了一下就跳转了，服了",
+          "createdAt": "2026-06-19T19:05:30.086Z"
+        },
+        {
+          "stars": 1,
+          "comment": "我把手机放桌上充电，它自己摇了？？",
+          "createdAt": "2026-06-27T19:05:30.086Z"
+        },
+        {
+          "stars": 4,
+          "comment": "坐公交晃一下就跳广告，车费都省了看广告了",
+          "createdAt": "2026-07-01T19:05:30.086Z"
+        },
+        {
+          "stars": 2,
+          "comment": "我把手机放桌上充电，它自己摇了？？",
+          "createdAt": "2026-06-29T19:05:30.086Z"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "京东",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5f/b7/21/5fb721e0-50b8-450c-536e-f4e05c3e73cd/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/120x120bb.png",
+      "description": "京东物流快，摇一摇跳转更快，手一抖就去了活动页。",
+      "ratings": [
+        {
+          "stars": 3,
+          "comment": "我把手机放桌上它都能识别到摇动，离谱",
+          "createdAt": "2026-06-14T19:05:30.086Z"
+        },
+        {
+          "stars": 3,
+          "comment": "坐公交晃一下就跳广告，车费都省了看广告了",
+          "createdAt": "2026-07-01T19:05:30.086Z"
+        },
+        {
+          "stars": 5,
+          "comment": "每次打开App都要小心翼翼地端着手机",
+          "createdAt": "2026-06-22T19:05:30.086Z"
+        },
+        {
+          "stars": 2,
+          "comment": "我把手机放桌上充电，它自己摇了？？",
+          "createdAt": "2026-07-05T19:05:30.086Z"
+        },
+        {
+          "stars": 2,
+          "comment": "求求你做个人吧，取消摇一摇广告",
+          "createdAt": "2026-07-05T19:05:30.086Z"
+        },
+        {
+          "stars": 5,
+          "comment": "我把手机放桌上充电，它自己摇了？？",
+          "createdAt": "2026-07-04T19:05:30.086Z"
+        },
+        {
+          "stars": 1,
+          "comment": "求求你做个人吧，取消摇一摇广告",
+          "createdAt": "2026-06-17T19:05:30.086Z"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "拼多多",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/07/c6/c8/07c6c89c-de16-4f2e-8f2a-ceecf39b9052/AppIcon-0-0-1x_U007emarketing-0-8-0-0-85-220.png/120x120bb.png",
+      "description": "砍一刀还没完，摇一摇又来了，手机都不敢动。",
+      "ratings": [
+        {
+          "stars": 1,
+          "comment": "我就换个手拿手机就给我跳转了",
+          "createdAt": "2026-06-15T19:05:30.086Z"
+        },
+        {
+          "stars": 3,
+          "comment": "我把手机放桌上它都能识别到摇动，离谱",
+          "createdAt": "2026-06-29T19:05:30.087Z"
+        },
+        {
+          "stars": 1,
+          "comment": "坐公交晃一下就跳广告，车费都省了看广告了",
+          "createdAt": "2026-07-06T19:05:30.087Z"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "小红书",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/62/9b/22/629b22f9-54b9-0693-3160-9ee4a0f64b8f/AppIcon-0-0-1x_U007emarketing-0-0-0-0-85-220-0.png/120x120bb.png",
+      "description": "刷个笔记也要摇，我只是换了个姿势而已！",
+      "ratings": [
+        {
+          "stars": 4,
+          "comment": "我把手机放桌上充电，它自己摇了？？",
+          "createdAt": "2026-06-20T19:05:30.087Z"
+        },
+        {
+          "stars": 3,
+          "comment": "强烈建议工信部下架这个功能",
+          "createdAt": "2026-06-22T19:05:30.087Z"
+        },
+        {
+          "stars": 3,
+          "comment": "这个摇一摇灵敏度也太高了吧",
+          "createdAt": "2026-06-18T19:05:30.087Z"
+        },
+        {
+          "stars": 5,
+          "comment": "求求你做个人吧，取消摇一摇广告",
+          "createdAt": "2026-06-16T19:05:30.087Z"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "微博",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/35/44/6f/35446f67-2db9-c3df-9a75-8ab21bcd20a6/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/120x120bb.png",
+      "description": "热搜还没刷完，摇一摇先把我送走了。",
+      "ratings": [
+        {
+          "stars": 2,
+          "comment": "手机放兜里走路都能触发广告",
+          "createdAt": "2026-06-19T19:05:30.087Z"
+        },
+        {
+          "stars": 2,
+          "comment": "手机放兜里走路都能触发广告",
+          "createdAt": "2026-07-01T19:05:30.087Z"
+        },
+        {
+          "stars": 3,
+          "comment": "我把手机放桌上充电，它自己摇了？？",
+          "createdAt": "2026-07-08T19:05:30.087Z"
+        },
+        {
+          "stars": 1,
+          "comment": "上个厕所抖了一下就跳转了，服了",
+          "createdAt": "2026-07-02T19:05:30.087Z"
+        },
+        {
+          "stars": 2,
+          "comment": "强烈建议工信部下架这个功能",
+          "createdAt": "2026-06-20T19:05:30.087Z"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "饿了么",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/22/35/cc/2235cc3d-0db8-ad59-2eba-6061a5940164/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/120x120bb.png",
+      "description": "饭还没点，先摇了个广告开胃。",
+      "ratings": [
+        {
+          "stars": 2,
+          "comment": "我把手机放桌上充电，它自己摇了？？",
+          "createdAt": "2026-07-10T19:05:30.087Z"
+        },
+        {
+          "stars": 5,
+          "comment": "我就换个手拿手机就给我跳转了",
+          "createdAt": "2026-06-16T19:05:30.087Z"
+        },
+        {
+          "stars": 3,
+          "comment": "每次打开都像在玩节奏大师，手都不能动",
+          "createdAt": "2026-06-20T19:05:30.087Z"
+        },
+        {
+          "stars": 1,
+          "comment": "我把手机放桌上它都能识别到摇动，离谱",
+          "createdAt": "2026-06-22T19:05:30.087Z"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "美团",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/db/38/ee/db38ee38-af63-b33f-4f4b-1e1bbaf05e58/AppIcon-0-0-1x_U007emarketing-0-0-0-0-85-220-0.png/120x120bb.png",
+      "description": "团购之前先团摇，手机稍微动一下就跳转。",
+      "ratings": [
+        {
+          "stars": 5,
+          "comment": "每次打开App都要小心翼翼地端着手机",
+          "createdAt": "2026-06-29T19:05:30.087Z"
+        },
+        {
+          "stars": 5,
+          "comment": "我就换个手拿手机就给我跳转了",
+          "createdAt": "2026-07-10T19:05:30.087Z"
+        },
+        {
+          "stars": 2,
+          "comment": "我家猫碰了一下手机就跳广告了",
+          "createdAt": "2026-06-12T19:05:30.087Z"
+        },
+        {
+          "stars": 1,
+          "comment": "我家猫碰了一下手机就跳广告了",
+          "createdAt": "2026-07-09T19:05:30.087Z"
+        },
+        {
+          "stars": 1,
+          "comment": "能不能关掉这个功能啊求求了",
+          "createdAt": "2026-06-12T19:05:30.087Z"
+        },
+        {
+          "stars": 1,
+          "comment": "我家猫碰了一下手机就跳广告了",
+          "createdAt": "2026-06-29T19:05:30.087Z"
+        },
+        {
+          "stars": 4,
+          "comment": "这功能绝对是反人类设计第一名",
+          "createdAt": "2026-07-06T19:05:30.087Z"
+        },
+        {
+          "stars": 4,
+          "comment": "能不能关掉这个功能啊求求了",
+          "createdAt": "2026-06-16T19:05:30.087Z"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "QQ音乐",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/45/ce/47/45ce4795-bad3-8144-b85a-e23f91f0ea18/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/120x120bb.png",
+      "description": "听歌听到一半，摇一摇切广告了。",
+      "ratings": [
+        {
+          "stars": 2,
+          "comment": "每次打开都像在玩节奏大师，手都不能动",
+          "createdAt": "2026-06-23T19:05:30.087Z"
+        },
+        {
+          "stars": 1,
+          "comment": "每次打开App都要小心翼翼地端着手机",
+          "createdAt": "2026-06-14T19:05:30.087Z"
+        },
+        {
+          "stars": 1,
+          "comment": "强烈建议工信部下架这个功能",
+          "createdAt": "2026-06-20T19:05:30.087Z"
+        },
+        {
+          "stars": 5,
+          "comment": "这功能绝对是反人类设计第一名",
+          "createdAt": "2026-07-05T19:05:30.087Z"
+        },
+        {
+          "stars": 5,
+          "comment": "每次打开App都要小心翼翼地端着手机",
+          "createdAt": "2026-06-29T19:05:30.087Z"
+        },
+        {
+          "stars": 2,
+          "comment": "每次打开都像在玩节奏大师，手都不能动",
+          "createdAt": "2026-06-16T19:05:30.087Z"
+        },
+        {
+          "stars": 2,
+          "comment": "每次打开都像在玩节奏大师，手都不能动",
+          "createdAt": "2026-06-28T19:05:30.087Z"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "网易云音乐",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/90/73/a1/9073a10e-0db4-3aed-cc9c-dc7d2aa410f3/AppIcon-0-0-1x_U007emarketing-0-0-0-0-85-220-0.png/120x120bb.png",
+      "description": "云村村民纷纷表示：我只是想听首歌，为什么要摇我？",
+      "ratings": [
+        {
+          "stars": 2,
+          "comment": "坐公交晃一下就跳广告，车费都省了看广告了",
+          "createdAt": "2026-06-17T19:05:30.087Z"
+        },
+        {
+          "stars": 1,
+          "comment": "能不能关掉这个功能啊求求了",
+          "createdAt": "2026-07-05T19:05:30.087Z"
+        },
+        {
+          "stars": 5,
+          "comment": "每次打开App都要小心翼翼地端着手机",
+          "createdAt": "2026-07-07T19:05:30.087Z"
+        },
+        {
+          "stars": 4,
+          "comment": "这功能绝对是反人类设计第一名",
+          "createdAt": "2026-06-18T19:05:30.087Z"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "知乎",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e2/b0/81/e2b08116-0bb4-1a36-2a9a-3106500fbc0b/AppIcon-0-0-1x_U007emarketing-0-0-0-0-85-220-0.png/120x120bb.png",
+      "description": "谢邀，人在手机前，刚被摇走。",
+      "ratings": [
+        {
+          "stars": 4,
+          "comment": "我把手机放桌上它都能识别到摇动，离谱",
+          "createdAt": "2026-06-23T19:05:30.087Z"
+        },
+        {
+          "stars": 5,
+          "comment": "每次打开App都要小心翼翼地端着手机",
+          "createdAt": "2026-06-14T19:05:30.087Z"
+        },
+        {
+          "stars": 1,
+          "comment": "躺着刷手机，翻个身就跳转了",
+          "createdAt": "2026-06-15T19:05:30.087Z"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "百度",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6f/cb/44/6fcb44b6-54fe-16b1-8f36-14e9f4c866ec/AppIcon-0-0-1x_U007emarketing-0-0-0-0-85-220-0.png/120x120bb.png",
+      "description": "百度一下，你就被摇到广告里了。",
+      "ratings": [
+        {
+          "stars": 1,
+          "comment": "这个摇一摇灵敏度也太高了吧",
+          "createdAt": "2026-07-08T19:05:30.087Z"
+        },
+        {
+          "stars": 5,
+          "comment": "坐公交晃一下就跳广告，车费都省了看广告了",
+          "createdAt": "2026-06-29T19:05:30.087Z"
+        },
+        {
+          "stars": 5,
+          "comment": "每次打开App都要小心翼翼地端着手机",
+          "createdAt": "2026-07-04T19:05:30.087Z"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "抖音",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a1/7a/ec/a17aec03-5894-2818-cb76-6f150ba7e260/AppIcon-0-0-1x_U007emarketing-0-0-0-0-85-220-0.png/120x120bb.png",
+      "description": "刷着刷着就摇起来了，我都不知道我在抖还是在摇。",
+      "ratings": [
+        {
+          "stars": 5,
+          "comment": "求求你做个人吧，取消摇一摇广告",
+          "createdAt": "2026-06-25T19:05:30.087Z"
+        },
+        {
+          "stars": 2,
+          "comment": "我把手机放桌上充电，它自己摇了？？",
+          "createdAt": "2026-07-01T19:05:30.087Z"
+        },
+        {
+          "stars": 5,
+          "comment": "求求你做个人吧，取消摇一摇广告",
+          "createdAt": "2026-06-14T19:05:30.087Z"
+        },
+        {
+          "stars": 1,
+          "comment": "我把手机放桌上充电，它自己摇了？？",
+          "createdAt": "2026-06-18T19:05:30.087Z"
+        }
+      ]
+    }
+  ]
+}

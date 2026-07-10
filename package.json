@@ -1,0 +1,12 @@
+{
+  "name": "shake-ad-complaints",
+  "version": "1.0.0",
+  "description": "摇一摇广告吐槽榜 - 匿名吐槽那些烦人的摇一摇广告",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.22.2"
+  }
+}

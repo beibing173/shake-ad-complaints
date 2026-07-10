@@ -1,4 +1,6 @@
 var selectedStars = 0;
+var currentTheme = localStorage.getItem('theme') || 'dark';
+if (currentTheme === 'light') document.documentElement.setAttribute('data-theme', 'light');
 
 function $(s) { return document.querySelector(s); }
 function $$(s) { return document.querySelectorAll(s); }
@@ -6,6 +8,20 @@ function $$(s) { return document.querySelectorAll(s); }
 fetch('/api/apps').then(function(r){return r.json()}).then(function(apps){
   renderApps(apps);
   updateStats(apps);
+document.getElementById('themeToggle').addEventListener('click', function() {
+  var html = document.documentElement;
+  if (html.getAttribute('data-theme') === 'light') {
+    html.removeAttribute('data-theme');
+    this.innerHTML = '🌙 暗色';
+    localStorage.setItem('theme', 'dark');
+  } else {
+    html.setAttribute('data-theme', 'light');
+    this.innerHTML = '☀️ 亮色';
+    localStorage.setItem('theme', 'light');
+  }
+});
+if (currentTheme === 'light') document.getElementById('themeToggle').innerHTML = '☀️ 亮色';
+
 }).catch(function(){ $('#appList').innerHTML = '<div class="loading">❌ 加载失败，请确认服务已启动</div>'; });
 
 function updateStats(apps) {
@@ -35,6 +51,51 @@ function renderApps(apps) {
   $('#appList').innerHTML = html;
   $$('.app-card').forEach(function(el){
     el.addEventListener('click', function(){ openDetail(parseInt(el.dataset.id)); });
+  });
+}
+
+document.getElementById('addAppBtn').addEventListener('click', function() { showAddAppModal(); });
+
+function showAddAppModal() {
+  $('#modal').classList.remove('hidden');
+  $('#modalBody').innerHTML = '<h3 style="margin-bottom:16px;">➕ 添加 App</h3>'
+    + '<div class="form-group"><label>App 名称 *</label><input id="addName" placeholder="例如：微信" maxlength="30"></div>'
+    + '<div class="form-group"><label>图标链接（可选）</label><input id="addIcon" placeholder="https://example.com/icon.png"></div>'
+    + '<div class="form-group"><label>吐槽描述（可选）</label><textarea id="addDesc" placeholder="为什么要吐槽这个 App？" maxlength="200" style="min-height:60px;"></textarea></div>'
+    + '<div class="btn-row"><button class="btn-primary" id="addSubmitBtn">✅ 添加</button><button class="btn-secondary" id="addCancelBtn">取消</button></div>'
+    + '<div id="addMsg" style="margin-top:8px;font-size:0.85rem;"></div>';
+  document.getElementById('addSubmitBtn').onclick = function() {
+    var name = document.getElementById('addName').value.trim();
+    var icon = document.getElementById('addIcon').value.trim();
+    var desc = document.getElementById('addDesc').value.trim();
+    if (!name) { document.getElementById('addMsg').innerHTML = '<span style="color:var(--accent);">请填写 App 名称</span>'; return; }
+    document.getElementById('addSubmitBtn').disabled = true;
+    document.getElementById('addSubmitBtn').textContent = '添加中...';
+    fetch('/api/apps', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({name:name, icon:icon, desc:desc})
+    }).then(function(r){return r.json()}).then(function(d){
+      if (d.success) {
+        document.getElementById('addMsg').innerHTML = '<span style="color:#51cf66;">✅ ' + d.app.name + ' 已添加！</span>';
+        setTimeout(function() { closeModal(); refreshList(); }, 800);
+      } else {
+        document.getElementById('addMsg').innerHTML = '<span style="color:var(--accent);">❌ ' + (d.error||'失败') + '</span>';
+      }
+    }).catch(function(){
+      document.getElementById('addMsg').innerHTML = '<span style="color:var(--accent);">❌ 网络错误</span>';
+    }).finally(function(){
+      document.getElementById('addSubmitBtn').disabled = false;
+      document.getElementById('addSubmitBtn').textContent = '✅ 添加';
+    });
+  };
+  document.getElementById('addCancelBtn').onclick = closeModal;
+}
+
+function refreshList() {
+  fetch('/api/apps').then(function(r){return r.json()}).then(function(apps){
+    renderApps(apps);
+    updateStats(apps);
   });
 }
 

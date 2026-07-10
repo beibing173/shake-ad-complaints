@@ -75,6 +75,23 @@ app.post('/api/apps/:id/rate', function(req, res) {
   res.json({ success: true });
 });
 
+
+app.post('/api/apps', function(req, res) {
+  var name = (req.body.name || '').trim();
+  var icon = (req.body.icon || '').trim();
+  var desc = (req.body.desc || '').trim();
+  if (!name) return res.status(400).json({ error: '请输入 App 名称' });
+  if (!icon) icon = '';
+  if (!desc) desc = '';
+  var data = loadData();
+  var maxId = 0;
+  data.apps.forEach(function(a) { if (a.id > maxId) maxId = a.id; });
+  var newApp = { id: maxId + 1, name: name, icon: icon, description: desc, ratings: [] };
+  data.apps.push(newApp);
+  saveData(data);
+  res.json({ success: true, app: newApp });
+});
+
 app.listen(PORT, function() {
   console.log('');
   console.log('  ┌──────────────────────────────────────┐');

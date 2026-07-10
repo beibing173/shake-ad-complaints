@@ -37,6 +37,6 @@
 ## Git 分支说明
 
 - `main` — 原始 Express 版本（适合本地运行）
-- `cf-pages` — Cloudflare Pages 版本（线上部署）
+- `cf-pages` — Cloudflare Pages 版本（线上部署，使用 KV 存储）
 
 > 所有数据存储在 Cloudflare KV 中，**不是**本地 JSON 文件。
